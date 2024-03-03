@@ -52,18 +52,23 @@
 
                     <div class="upper">
                         <label for="user_password">PASSWORD</label>
-                        <input type="password" name="user_password" id="user_password">
+                        <input type="password" name="user_password" id="user_password" required pattern=".{6,}">
+                        <span id="passwordMatch">The passwords do not match*</span>
                     </div>
                     
                     <div class="lower">
                         <label for="user_confirmpassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="user_confirmpassword" id="user_confirmpassword">
+                        <input type="password" name="user_confirmpassword" id="user_confirmpassword" required>
                     </div>
                 </div>
 
             </form>
         </div>
-        <div class="right-3"></div>
+        <div class="right-3">
+            <button type="submit" id="createacnt">Create Account</button>
+            <p id="alreadyuser">Already have an account? <a href="index.html">Log in</a></p>
+        </div>
     </div>
 </body>
+<script src="code/script.js"></script>
 </html>

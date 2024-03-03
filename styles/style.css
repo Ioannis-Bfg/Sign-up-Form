@@ -69,7 +69,7 @@ body{
     display: flex;
     box-sizing: border-box;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-family: Araboto;
 }
 
@@ -138,11 +138,7 @@ body{
     filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
     padding: 2% 4%;
 }
-.right-3{
-    background-color: var(--background-color);
-    height: 10vh;
-    flex:2;
-}
+
 
 /* //////////////////////////////// */
 
@@ -150,12 +146,12 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:28vw;
+    width:35vw;
 }
 
 form > div {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 
@@ -168,9 +164,9 @@ form > div {
 
 label {
     font-family: AraL;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #66686b;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 legend{
@@ -183,4 +179,62 @@ input{
     width:13vw;
     height:2.5vh;
     border-radius: 3px;
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+    font-family: Araboto;
+    font-weight: 300;
+    color: #25272c;
+    font-size: 1rem;
+    padding: 2% ;
+}
+
+input[type="password"]:invalid{
+    border: 2px solid red;
+}
+
+#passwordMatch{
+    font:AraL;
+    font-weight: 100;
+    font-size: 1rem;
+    color:red;
+}
+
+/* /////////////////////////////////////////// */
+
+.right-3{
+    background-color: var(--background-color);
+    height: 10vh;
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:8%;
+    padding: 0% 5% ;
+}
+
+#createacnt{
+    padding:1.4%;
+    width:11vw;
+    background-color: #596d48;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 0.6rem;
+    border:transparent;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+#alreadyuser{
+    font-size: 1.2rem;
+    color:#32373d;
+}
+
+a {
+    text-decoration: none;
+    color: #415035;
+}
+
+#createacnt:hover{
+    background-color: white;
+    color: #415035;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.6));
 }
