@@ -209,7 +209,7 @@ input[type="password"]:invalid{
     flex-direction: column;
     justify-content: center;
     gap:8%;
-    padding: 0% 5% ;
+    padding: 0% 4% ;
 }
 
 #createacnt{
@@ -225,6 +225,7 @@ input[type="password"]:invalid{
     border-radius: 0.6rem;
     font-weight: 500;
     border:transparent;
+    transition: all 0.2s;
     filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
 }
 
@@ -238,8 +239,20 @@ a {
     color: #415035;
 }
 
+a:hover{
+    cursor:pointer; ;
+}
+
 #createacnt:hover{
     background-color: white;
     color: #415035;
+    cursor: pointer;
+    transition: 0.2s;
     filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.6));
+}
+
+#createacnt:active{
+    transform: translateY(2px);
+    transition: 0.1s;
+    box-shadow: 0 4px 5px #366344;
 }
